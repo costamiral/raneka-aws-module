@@ -1,0 +1,12 @@
+name: Raneka AWS Action Component Workflow
+description: ""
+
+runs:
+  using: "composite"
+  steps:
+    - name: Run
+      id: git
+      run: |
+        chmod +x ${{ github.action_path }}/bin/kiuwan_analysis_aws
+        ${{ github.action_path }}/bin/kiuwan_analysis_aws
+      shell: bash
