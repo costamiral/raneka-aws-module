@@ -4,7 +4,6 @@ description: ""
 runs:
   using: "composite"
   steps: 
-    - name: Raneka AWS Workflow Step
     - name: Run
       id: git
       run: |
