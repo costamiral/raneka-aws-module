@@ -3,9 +3,7 @@ description: ""
 
 runs:
   using: "composite"
-  steps:    
-    - uses: aws-actions/setup-aws-cli@v4
-    - uses: aws-actions/configure-aws-credentials@v4
+  steps: 
     - name: Raneka AWS Workflow Step
     - name: Run
       id: git
